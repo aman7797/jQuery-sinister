@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JQuery Example</title>
+        <script src="js/jquery.js"></script>
+        <script>
+            $("document").ready(function(){
+                
+                $("#textBox").on("click", whenMouseClicked);
+                $("#textBox").on("mouseleave", whenMouseRelease);
+
+                function whenMouseClicked (){
+                    $("#textBox").html("<h1>Clicked Mouse</h1>")
+                }
+                function whenMouseRelease (){
+                    $("#textBox").html("<h1>Unclicked Mouse</h1>")
+                }
+
+
+            });
+        </script>
+        <style>
+            #textBox{
+                width: 250px;
+                height: 250px;
+                border: 1px solid greenyellow;
+                background-color: aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "textBox">
+            
+        </div>
+
+    </body>
+</html>

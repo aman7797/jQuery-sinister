@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery Example</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $("document").ready(function () {
+
+            $("#toggleMe").click(function(){
+
+                $("#textBox").toggle(4000,"swing");
+            });
+        });
+    </script>
+    
+</head>
+
+<body>
+<a href="#" id="toggleMe">ToggleME</a>
+    <div id="textBox">
+        <p>dfghjkfghjfghj cfvgbnm dfgh fgh vbn gh jfghjkfghjfghj cfvgbnm dfgh fgh vbn gh jfghjkfghjfghj cfvgbnm dfgh fgh
+            vbn gh jfghjkfghjfghj cfvgbnm dfgh fgh vbn gh jfghjkfghjfghj cfvgbnm dfgh fgh vbn gh jfghjkfghjfghj cfvgbnm
+            dfgh fgh vbn gh jghjghjgh ghjghj gh ghj </p>
+    </div>
+</body>
+
+</html>

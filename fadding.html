@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>jQuery Example</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+        type='text/css'>
+    <link
+        href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+
+    <!-- For code highlighting -->
+    <link rel="stylesheet" href="css/default.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+
+    <style>
+        #textBox {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">jQuery Example</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/1.png');background-size: 100%;">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="site-heading">
+                        <span class="subheading">jQuery</span>
+                        <h1>Fadding Demo</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <h4>Fade In</h4>
+        <ul>
+            <li>The jQuery <code>fadeIn()</code> method is used to fade in a hidden element.</li>
+            <li>#textBox is refering where <code>id = "textBox"</code></li>
+            <li>2000 means 2 sec, it time period</li>
+        </ul>
+
+        <pre><code class="javascript">
+            $("document").ready(function () {
+                $("#fade-in").on("click", function () {
+                    $("#textBox").fadeIn(2000, function () {
+                        alert("I' done");
+                    });
+                });
+            });
+        </code></pre>
+
+
+        <h4>Fade Out</h4>
+        <ul>
+            <li>The fadeOut() method gradually changes the opacity, for selected elements, from visible to hidden
+                (fading effect).</li>
+            <li>#textBox is refering where <code>id = "textBox"</code></li>
+            <li>fast is speed, or we can use time period as above</li>
+        </ul>
+        <pre><code class="javascript">
+            $("document").ready(function () {
+                $("#fade-out").on("click", function () {
+                    $("#textBox").fadeOut("fast", function () {
+                        alert("I' done");
+                    });
+                });
+            });
+        </code></pre>
+
+        <hr>
+        <p></p>
+        <h4>Try it Yourself</h4>
+        <a href="#" id="fade-in">Fade In</a> | <a href="#" id="fade-out">Fade Out</a>
+        <div id="textBox">
+            <h1>I love jQuery</h1>
+            <p>Here comes the faded text <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        </div>
+
+        <hr>
+        <p></p>
+        <h4 style="align-items: center;">For Source Code - <a href="https://github.com/aman7797/" style="color: darkgray;"> Github</a></h4>
+
+
+        <a class="btn btn-primary btn-sm active" role="button" aria-pressed="true" href="hoverEffect.html">&larr; Previous Demo</a>
+        <a class="btn btn-primary btn-sm active" role="button" aria-pressed="true" href="slide.html">Next Demo &rarr;</a>
+
+    </div>
+
+
+    </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/AmanSharma163">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/profile.php?id=100001852345309">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/aman7797/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://linkedin.com/in/aman-lalpuria-9949755b/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Aman Lalpuria Website 2020</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+    <!-- For code highlighting -->
+    <script src="js/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+    <script>
+        $("document").ready(function () {
+            $("#fade-in").on("click", function () {
+                $("#textBox").fadeIn(2000, function () {
+                    alert("Fade-in done");
+                });
+            });
+            $("#fade-out").on("click", function () {
+                $("#textBox").fadeOut("fast", function () {
+                    alert("Fade-out done");
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

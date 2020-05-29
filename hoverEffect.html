@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery Example</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $("document").ready(function () {
+            $("#show").on("click", function () {
+                $("#textBox").show();
+            });
+            $("#hide").on("click", function () {
+                $("#textBox").hide();
+            });
+        });
+    </script>
+    <style>
+        #textBox {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" id="show">Click to Show</a> | <a href="#" id="hide">Chick to hide</a>
+    <div id="textBox">
+        <p>Aman Lalpuria v Aman Lalpuria Aman Lalpuria Aman Lalpuria Aman Lalpuria Aman Lalpuria Aman LalpuriaAman
+            Lalpuria Aman Lalpuria Aman Lalpuria Aman Lalpuria Aman Lalpuria </p>
+    </div>
+</body>
+
+</html>
