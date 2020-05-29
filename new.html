@@ -47,7 +47,7 @@
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="site-heading">
                         <span class="subheading">jQuery</span>
-                        <h1>Slide Demo</h1>
+                        <h1>Selectors Demo</h1>
                     </div>
                 </div>
             </div>
@@ -55,54 +55,21 @@
     </header>
 
     <div class="container">
-
-        <h4>Slide Up</h4>
+        <h4>Selector</h4>
+        <p>jQuery selectors are used to "find" (or select) HTML elements based on their name, id, classes, types,
+            attributes, values of attributes and much more. It's based on the existing CSS Selectors, and in addition,
+            it has some own custom selectors.</p>
         <ul>
-            <li>The slideUp() method slides-up (hides) the selected elements.</li>
-            <li>1000 means 1 sec, it time period</li>
-        </ul>
-
-        <pre><code class="javascript">
-            $("document").ready(function () {
-
-                $("#slide-up").click(function () {
-    
-                    $("#textBox").slideUp("1000", "linear");
-                });
-            });
-        </code></pre>
-
-
-        <h4>Slide Down</h4>
-        <ul>
-            <li>The slideDown() method slides-down (shows) the selected elements.</li>
-            <li>slow is speed, or we can use time period as above</li>
+            <li> The element Selector - $("p")</li>
+            <li> The #id Selector - The jQuery #id selector uses the id attribute of an HTML tag to find the specific element.</li>
+            <li> The .class Selector - The jQuery .class selector finds elements with a specific class.</li>
         </ul>
         <pre><code class="javascript">
             $("document").ready(function () {
-
-                $("#slide-down").click(function () {
+                $("p").css("border", "3px red border");
+                $("#headerTop").css("border", "1px blue solid");
+                $(".greenBorder").css("border", "2px green dashed");
     
-                    $("#textBox").slideDown("slow", "linear");
-                });
-            });
-        </code></pre>
-
-        <h4>Slide Toggle</h4>
-        <ul>
-            <li>This method checks the selected elements for visibility. slideDown() is run if an element is hidden.
-                slideUp() is run if an element is visible - This creates a toggle effect.</li>
-            <li>fast is speed, or we can use time period as above</li>
-        </ul>
-        <pre><code class="javascript">
-            $("document").ready(function () {
-
-                $("#toggleSlide").click(function () {
-    
-                    $("#textBox").slideToggle("fast", function () {
-                        alert("Done");
-                    });
-                });
             });
         </code></pre>
 
@@ -110,29 +77,41 @@
         <hr>
         <p></p>
         <h4>Try it Yourself</h4>
-        <a href="#" id="slide-up">Slide Up</a> | <a href="#" id="slide-down">Slide Down</a> | <a href="#"
-            id="toggleSlide">Toggle</a>
-        <div id="textBox">
 
-            <p>Here comes the faded text <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p id="headerTop">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. </p>
+        <p class="greenBorder">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+        </p>
 
-        </div>
 
         <!-- Next and Previous Button  -->
         <hr>
         <p></p>
-        <h4 style="align-items: center;">For Source Code - <a href="https://github.com/aman7797/"
+        <h4 style="align-items: center;">For Source Code - <a href="https://github.com/aman7797/jQuery-sinister"
                 style="color: darkgray;"> Github</a></h4>
 
 
-        <a class="btn btn-primary btn-sm active" role="button" aria-pressed="true" href="slide.html">&larr; Previous
+        <a class="btn btn-primary btn-sm active" role="button" aria-pressed="true" href="animate.html">&larr;
+            Previous
             Demo</a>
-        <a class="btn btn-primary btn-sm active" role="button" aria-pressed="true" href="slide.html">Next Demo
+        <a class="btn btn-primary btn-sm active" role="button" aria-pressed="true" href="filter.html">Next
+            Demo
             &rarr;</a>
 
     </div>
@@ -203,21 +182,10 @@
 
     <script>
         $("document").ready(function () {
+            $("p").css("border", "3px red border");
+            $("#headerTop").css("border", "1px blue solid");
+            $(".greenBorder").css("border", "2px green dashed");
 
-            $("#slide-up").click(function () {
-
-                $("#textBox").slideUp("1000", "linear");
-            });
-            $("#slide-down").click(function () {
-
-                $("#textBox").slideDown("slow", "linear");
-            });
-            $("#toggleSlide").click(function () {
-
-                $("#textBox").slideToggle("fast", function () {
-                    alert("Done");
-                });
-            });
         });
     </script>
 </body>

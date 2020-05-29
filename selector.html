@@ -1,20 +1,177 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>JQuery Example</title>
-        <script src="js/jquery.js"></script>
-        <script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>jQuery Example</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+        type='text/css'>
+    <link
+        href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+
+    <!-- For code highlighting -->
+    <link rel="stylesheet" href="css/default.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">jQuery Example</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/1.png');background-size: 100%;">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="site-heading">
+                        <span class="subheading">jQuery</span>
+                        <h1>Selector & Filter Demo</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h4>Selector</h4>
+        <p>jQuery selectors are used to "find" (or select) HTML elements based on their name, id, classes, types,
+            attributes, values of attributes and much more. It's based on the existing CSS Selectors, and in addition,
+            it has some own custom selectors.</p>
+        <ul>
+            <li> The $(document).ready() method allows us to execute a function when the document is fully loaded.</li>
+            <li> h6:first selects the first h6 element and make it green.</li>
+            <li> h6:last selects the last h6 element and make it green.</li>
+        </ul>
+        <pre><code class="javascript">
             $("document").ready(function(){
-                $("h1:first").css("border", "3px solid green")
-                $("h1:last").css("border", "3px solid green")
+                $("h6:first").css("border", "3px solid green")
+                $("h6:last").css("border", "3px solid green")
 
             });
-        </script>
-    </head>
-    <body>
-        <h1>I love jQuery</h1>
-        <h1>I love jQuery</h1>
-        <h1>I love jQuery</h1>
+        </code></pre>
 
-    </body>
+        <!-- Try it Yourself -->
+        <hr>
+        <p></p>
+        <h4>Try it Yourself</h4>
+
+        <div id="textBox">
+            <h6>I love jQuery</h6>
+            <h6>I love jQuery</h6>
+            <h6>I love jQuery</h6>
+            <h6>I love jQuery</h6>
+        </div>
+
+
+        <!-- Next and Previous Button  -->
+        <hr>
+        <p></p>
+        <h4 style="align-items: center;">For Source Code - <a href="https://github.com/aman7797/jQuery-sinister"
+                style="color: darkgray;"> Github</a></h4>
+
+
+        <a class="btn btn-primary btn-sm active" role="button" aria-pressed="true" href="jquery.html">&larr;
+            Previous
+            Demo</a>
+        <a class="btn btn-primary btn-sm active" role="button" aria-pressed="true" href="replacingContent.html">Next
+            Demo
+            &rarr;</a>
+
+    </div>
+
+
+    </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/AmanSharma163">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/profile.php?id=100001852345309">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/aman7797/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://linkedin.com/in/aman-lalpuria-9949755b/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Aman Lalpuria Website 2020</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+    <!-- For code highlighting -->
+    <script src="js/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+    <script>
+        $("document").ready(function () {
+            $("h6:first").css("border", "3px solid green")
+            $("h6:last").css("border", "3px solid green")
+
+        });
+    </script>
+</body>
+
 </html>
