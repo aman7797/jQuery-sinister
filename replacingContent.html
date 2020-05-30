@@ -83,7 +83,7 @@
                 representation can also be used to represent a weighted graph. The weights of edges can be represented
                 as lists of pairs. Following is adjacency list representation of the above graph</p>
         </div>
-
+        <button>Click me to Try</button>
 
         <!-- Next and Previous Button  -->
         <hr>
@@ -166,11 +166,11 @@
 
     <script>
         $("document").ready(function () {
-
-            var newText = $("<p>");
-            newText.append("<i>I just replaced something</i>")
-            $("#textBox").html(newText)
-
+            $("button").click(function () {
+                var newText = $("<p>");
+                newText.append("<i>I just replaced something</i>")
+                $("#textBox").html(newText)
+            });
         });
     </script>
 </body>

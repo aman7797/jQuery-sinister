@@ -57,7 +57,7 @@
     <div class="container">
         <h4>Adding jQuery</h4>
         <p> Just required function in between opening and closing script tag.</p>
-   
+
         <pre><code class="javascript">
             &lt;script>
                 $("document").ready(function(){
@@ -66,7 +66,19 @@
             &lt;/script>
         </code></pre>
 
+        <!-- Try it Yourself -->
+        <hr>
+        <p></p>
+        <h4>Try it Yourself</h4>
 
+        <div id="textBox">
+
+            <p>Here comes the faded text <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore</p>
+
+        </div>
+
+        <button>Click me to Try</button>
 
         <!-- Next and Previous Button  -->
         <hr>
@@ -75,7 +87,7 @@
                 style="color: darkgray;"> Github</a></h4>
 
 
-   
+
         <a class="btn btn-primary btn-sm active" role="button" aria-pressed="true" href="replacingContent.html">Next
             Demo
             &rarr;</a>
@@ -144,6 +156,14 @@
     <script src="js/highlight.min.js"></script>
     <script>
         hljs.initHighlightingOnLoad();
+    </script>
+
+    <script>
+        $("document").ready(function () {
+            $("button").click(function () {
+                $("#textBox").append("<h1>I love jQuery</h1>");
+            });
+        });
     </script>
 
 </body>
