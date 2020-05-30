@@ -47,7 +47,7 @@
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="site-heading">
                         <span class="subheading">jQuery</span>
-                        <h1>Replacing Content Demo</h1>
+                        <h1>Creating Content Demo</h1>
                     </div>
                 </div>
             </div>
@@ -55,35 +55,27 @@
     </header>
 
     <div class="container">
-        <h4>Replacing Content</h4>
+        <h4>Creating Content</h4>
 
-        <ul>
-            <li> The $(document).ready() method allows us to execute a function when the document is fully loaded.</li>
-            <li> The append() method inserts specified content at the end of the selected elements.</li>
-            <li> So when the document loaded the append will replace the content of the element where id is textBox</li>
-        </ul>
         <pre><code class="javascript">
-            $("document").ready(function(){
+            $("document").ready(function () {
                 
-                var newText = $("&lt;p>");
-                newText.append("&lt;i>I just replaced something&lt;/i>")
-                $("#textBox").html(newText)
-
+                $("p:first-child").css("background-color", "green");
+                $("p:last-of-type").css("background-color", "red");
+                $("p:contains('Aman')").css("background-color", "orange");
+                
             });
         </code></pre>
 
+        <p>Understand the above code and go for Example</p>
         <!-- Try it Yourself -->
         <hr>
         <p></p>
         <h4>Try it Yourself</h4>
 
-        <div id="textBox">
-            <p>An array of lists is used. Size of the array is equal to the number of vertices. Let the array be
-                array[]. An entry array[i] represents the list of vertices adjacent to the ith vertex. This
-                representation can also be used to represent a weighted graph. The weights of edges can be represented
-                as lists of pairs. Following is adjacency list representation of the above graph</p>
-        </div>
-        <button class="btn btn-dark btn-sm active">Click me to Try</button>
+        <a href="creatingContentEx.html" target="_blank">Example</a>
+
+
 
         <!-- Next and Previous Button  -->
         <hr>
@@ -92,17 +84,14 @@
                 style="color: darkgray;"> Github</a></h4>
 
 
-        <a class="btn btn-primary btn-sm active" role="button" aria-pressed="true" href="selector.html">&larr;
+        <a class="btn btn-primary btn-sm active" role="button" aria-pressed="true" href="advanceSelector.html">&larr;
             Previous
             Demo</a>
-        <a class="btn btn-primary btn-sm active" role="button" aria-pressed="true" href="handlingEvent.html">Next Demo
+        <a class="btn btn-primary btn-sm active" role="button" aria-pressed="true" href="insertingContent.html">Next
+            Demo
             &rarr;</a>
-
     </div>
 
-
-    </div>
-    </div>
 
     <hr>
 
@@ -157,6 +146,8 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/clean-blog.min.js"></script>
+    <script src="js/jquery.js"></script>
+
 
     <!-- For code highlighting -->
     <script src="js/highlight.min.js"></script>
@@ -167,9 +158,7 @@
     <script>
         $("document").ready(function () {
             $("button").click(function () {
-                var newText = $("<p>");
-                newText.append("<i>I just replaced something</i>")
-                $("#textBox").html(newText)
+                $("p:first-child").css("border", "3px red border");
             });
         });
     </script>

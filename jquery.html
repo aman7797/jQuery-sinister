@@ -56,14 +56,41 @@
 
     <div class="container">
         <h4>Adding jQuery</h4>
-        <p> Just required function in between opening and closing script tag.</p>
+        <p>There are two versions of jQuery available for downloading:</p>
+        <h4>Downloading jQuery</h4>
+        <ul>
+            <li>Production version - this is for your live website because it has been minified and compressed</li>
+            <li>Development version - this is for testing and development (uncompressed and readable code)</li>
+        </ul>
+        <p>Both versions can be downloaded from <a href="http://jquery.com/download/">jQuery.com</a>.<br>
+
+            The jQuery library is a single JavaScript file, and you reference it with the HTML &lt;script> tag (notice
+            that the &lt;script> tag should be inside the &lt;head> section):</p>
+        <pre><code class="javascript">
+        &lt;head>
+            &lt;script src="jquery-3.5.1.min.js">&lt;/script>
+        &lt;/head>
+                </code></pre>
+
+        <h4>jQuery CDN</h4>
+        <p>
+            If you don't want to download and host jQuery yourself, you can include it from a CDN (Content Delivery
+            Network).
+
+            Google is an example of someone who host jQuery: </p>
 
         <pre><code class="javascript">
-            &lt;script>
-                $("document").ready(function(){
-                    $("body").append("&lt;h1>I love jQuery&lt;/h1>");
-                });
-            &lt;/script>
+                &lt;head>
+                    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">&lt;/script>
+                &lt;/head>
+                        </code></pre>
+        <p> Simple Example of jQuery</p>
+        <pre><code class="javascript">
+        &lt;script>
+            $("document").ready(function(){
+                $("body").append("&lt;h1>I love jQuery&lt;/h1>");
+            });
+        &lt;/script>
         </code></pre>
 
         <!-- Try it Yourself -->
@@ -78,7 +105,7 @@
 
         </div>
 
-        <button>Click me to Try</button>
+        <button class="btn btn-dark btn-sm active">Click me to Try</button>
 
         <!-- Next and Previous Button  -->
         <hr>

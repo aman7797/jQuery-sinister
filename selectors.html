@@ -61,7 +61,8 @@
             it has some own custom selectors.</p>
         <ul>
             <li> The element Selector - $("p")</li>
-            <li> The #id Selector - The jQuery #id selector uses the id attribute of an HTML tag to find the specific element.</li>
+            <li> The #id Selector - The jQuery #id selector uses the id attribute of an HTML tag to find the specific
+                element.</li>
             <li> The .class Selector - The jQuery .class selector finds elements with a specific class.</li>
         </ul>
         <pre><code class="javascript">
@@ -98,6 +99,7 @@
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
         </p>
+        <button class="btn btn-dark btn-sm active">Click me to Try</button>
 
 
         <!-- Next and Previous Button  -->
@@ -116,9 +118,6 @@
 
     </div>
 
-
-    </div>
-    </div>
 
     <hr>
 
@@ -182,10 +181,13 @@
 
     <script>
         $("document").ready(function () {
-            $("p").css("border", "3px red border");
-            $("#headerTop").css("border", "1px blue solid");
-            $(".greenBorder").css("border", "2px green dashed");
+            $("button").click(function () {
 
+                $("p").css("border", "3px red border");
+                $("#headerTop").css("border", "1px blue solid");
+                $(".greenBorder").css("border", "2px green dashed");
+
+            });
         });
     </script>
 </body>
